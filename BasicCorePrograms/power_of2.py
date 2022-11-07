@@ -1,14 +1,22 @@
+import logging
+logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
+
 def power_of_two(n):
     """
     this function finds out power of 2
-    :param n:
-    :return:
+    :param n:int
+    :return:none
     """
-    result = (n & n - 1)
-    if (result == 0):
-        print(True)
-    else:
-        print(False)
+    try:
+        result = (n & n - 1)
+        output = True if result == 0 else False
+        print(output)
+        # if (result == 0):
+        #     print(True)
+        # else:
+        #     print(False)
+    except Exception as e:
+        logging.exception(e)
 
 
 if __name__ == '__main__':

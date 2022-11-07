@@ -1,0 +1,5 @@
+ERROR:root:name 'num' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Yasin Nadaf\PycharmProjects\pythonBasicCorePrograms\BasicCorePrograms\swapping_number.py", line 13, in swapping_number
+    num1 = num1 + num
+NameError: name 'num' is not defined
